@@ -22,6 +22,11 @@ a{
 h1,h2,h3,h4,h5,h6, p{
   margin: 0;
 }
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 .container{
   max-width: 1230px;
@@ -138,7 +143,7 @@ header::after{
 .header__decor-text--one{
   z-index: 1;
   right: 145px;
-  bottom: 130px;
+  bottom: 110px;
 }
 
 .header__decor-text--one,
@@ -161,4 +166,101 @@ header::after{
   line-height: 39px;
   font-style: italic;
   text-align: center;
+}
+
+.info{
+  background-image: url(../images/info-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 90px;
+}
+
+.info::before{
+  content: "";
+  position: absolute;
+  height: 180px;
+  background-color: #262C27;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-180px);
+  z-index: 1;
+}
+
+.info__top{
+  display: flex;
+  gap: 80px;
+  padding-top: 100px;
+  margin-bottom: 75vh;
+}
+
+.info__top-text{
+  padding-top: 245px;
+  width: 290px;
+  color: #fff;
+  position: relative;
+}
+.info__top-text--one{
+  padding-bottom: 125px;
+}
+.info__top-text--two{
+  border-bottom: 1px solid #fff;
+}
+
+.info__top-img{
+  position: relative;
+  z-index: 6;
+}
+
+.popup-btn{
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.popup-btn span{
+  padding-top: 12px;
+  display: block;
+  color: #fff;
+}
+
+.info__btn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.info__specs{
+  display: flex;
+  align-items: center;
+  gap: 130px;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+.info__specs-title{
+  text-transform: uppercase;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 60px;
+  line-height: 67px;
+  width: 250px;
+}
+
+.info__specs-list{
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 30px 0;
+  width: 565px;
+  font-weight: 700;
+
+}
+.info__specs-item{
+  margin-bottom: 15px;
+  display: flex;
+  gap: 25px;
+}
+.info__specs-caption{
+  width: 185px;
 }
