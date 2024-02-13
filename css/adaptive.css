@@ -21,6 +21,17 @@
     max-width: 600px;
   }
 }
+@media(max-width: 1175px) {
+  .gallery__box{
+    flex-wrap: wrap;
+  }
+  .gallery-min{
+    margin-top: 0;
+  }
+  .gallery__text{
+    width: 100%;
+  }
+}
 @media(max-width: 1000px) {
   .info__top{
     display: block;
@@ -39,6 +50,15 @@
   }
   .info__specs{
     display: block;
+  }
+  .gallery-min__img{
+    width: 100%;
+    align-self: stretch;
+  }
+  .gallery-min{
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
   }
 }
 @media(max-width: 840px) {
@@ -72,6 +92,9 @@
     font-size: 48px;
     line-height: 56px;
   }
+  .gallery-min{
+    padding: 20px 10px 20px;
+  }
 }
 @media(max-width: 500px) {
   .buy__price{
@@ -88,6 +111,16 @@
   }
   .header__content{
     z-index: 5;
+  }
+  .gallery-min::before{
+    display: none;
+  }
+  .gallery-min{
+    gap: 10px;
+  }
+  .technology__title{
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 @media(max-width: 375px) {
