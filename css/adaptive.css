@@ -20,6 +20,15 @@
     width: 100%;
     max-width: 600px;
   }
+  .gallery-max{
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    width: 100%;
+  }
+  .gallery-max__img{
+    width: 100%;
+    align-self: stretch;
+  }
 }
 @media(max-width: 1175px) {
   .gallery__box{
@@ -65,6 +74,13 @@
   .buy__price{
     bottom: auto;
     top: -350px;
+  }
+  .gallery-min{
+    margin-bottom: 50px;
+  }
+  .gallery-max__text{
+    font-size: 18px;
+    line-height: 20px;
   }
 }
 
@@ -115,7 +131,8 @@
   .gallery-min::before{
     display: none;
   }
-  .gallery-min{
+  .gallery-min,
+  .gallery-max{
     gap: 10px;
   }
   .technology__title{
